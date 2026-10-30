@@ -9,6 +9,6 @@ if __name__ == "__main__":
                     odometry.callback(sample)
                 for sample in imu.read_gyro(_imu):
                     odometry.gyro_callback(sample)
-                print(odometry.get_translation_3d() + odometry.get_rotation_3d())
+                print(str(odometry.get_translation_3d()) + " " +  str(odometry.get_rotation_3d()))
         except KeyboardInterrupt:
             pass
