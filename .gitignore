@@ -1,1 +1,4 @@
-*.json
+recordings/
+__pycache__/
+.venv/
+PLAN.md

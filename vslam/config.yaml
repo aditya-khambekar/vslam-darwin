@@ -1,0 +1,12 @@
+camera:
+  index: 0
+  width: 640
+  height: 480
+  fps: 30
+  intrinsics: null   # filled by tools/calibrate_camera.py (Phase 1)
+  distortion: null
+imu:
+  calibration_file: calibration.json
+  lid_angle_deg: null   # fixed per session; logged with every recording
+recording:
+  dir: recordings
